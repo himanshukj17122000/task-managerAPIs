@@ -6,6 +6,7 @@ mongoose.connect(process.env.MONGODB_URL, {
   useFindAndModify: false,
 });
 
+
 // const me = new User({
 //   name: "Himanshu",
 //   password: "Hhkajin12",
