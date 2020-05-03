@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
-mongoose.connect(process.env.connectionURL, {
+mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
-
 
 // const me = new User({
 //   name: "Himanshu",
@@ -17,8 +16,6 @@ mongoose.connect(process.env.connectionURL, {
 // me.save()
 //   .then((response) => console.log(response))
 //   .catch((error) => console.log(error));
-
-
 
 // const taskHW = new Task({
 //   description: "Do homework",
